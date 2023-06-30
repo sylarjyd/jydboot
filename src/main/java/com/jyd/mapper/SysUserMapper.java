@@ -2,7 +2,6 @@ package com.jyd.mapper;
 
 import com.jyd.entity.SysUser;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.apache.ibatis.annotations.Mapper;
 
 /**
  * <p>
@@ -12,7 +11,6 @@ import org.apache.ibatis.annotations.Mapper;
  * @author jyd
  * @since 2023-06-30
  */
-@Mapper
 public interface SysUserMapper extends BaseMapper<SysUser> {
 
 }
