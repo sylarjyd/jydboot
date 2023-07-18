@@ -52,11 +52,11 @@
             <artifactId>redisson</artifactId>
             <version>3.8.2</version>
         </dependency>
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
-            <version>3.2.1</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.baomidou</groupId>-->
+<!--            <artifactId>dynamic-datasource-spring-boot-starter</artifactId>-->
+<!--            <version>3.3.2</version>-->
+<!--        </dependency>-->
         <!-- lombok 代码简化 -->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -112,7 +112,7 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.7.13</version>
+                <version>2.3.12.RELEASE</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

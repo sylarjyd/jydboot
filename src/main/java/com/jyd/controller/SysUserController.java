@@ -1,6 +1,7 @@
 package com.jyd.controller;
 
 
+import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.stereotype.Controller;
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Controller;
  */
 @Controller
 @RequestMapping("/sys-user")
+@Api(value = "系统用户控制器",tags ="系统用户控制器")
 public class SysUserController {
 
 }

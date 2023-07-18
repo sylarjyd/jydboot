@@ -1,26 +1,15 @@
 spring:
   datasource:
-    dynamic:
-      primary: master
-      strict: false
-      datasource:
-        master:
-          url: jdbc:mysql://172.16.10.243:3306/jydboot?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&autoReconnect=true&rewriteBatchedStatements=true&allowMultiQueries=true
-          username: root
-          password: Whdsj@!db109
-          driverClassName: com.mysql.cj.jdbc.Driver
-        slave:
-          url: jdbc:mysql://172.16.10.73:9030/jydboot?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&autoReconnect=true&rewriteBatchedStatements=true&allowMultiQueries=true
-          username: root
-          password: Whdsj@sr20230228
-          driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://172.16.10.243:3306/jydboot?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&autoReconnect=true&rewriteBatchedStatements=true&allowMultiQueries=true
+    username: root
+    password: Whdsj@!db109
+    driverClassName: com.mysql.cj.jdbc.Driver
   redis:
     host: 172.16.10.243
     port: 6379
     password: 'Whdsj@Wcyj109'
     database: 10
     ssl: false
-
 xxl:
   job:
     accessToken: ''
