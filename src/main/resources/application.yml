@@ -50,5 +50,5 @@ spring:
 
 mybatis-plus:
   mapperPackage: com.jyd.mapper
-  mapperLocations: classpath*:mapper/*Mapper.xml
+  mapperLocations: com.jyd.mapper/*Mapper.xml
   typeAliasesPackage: com.jyd.entity

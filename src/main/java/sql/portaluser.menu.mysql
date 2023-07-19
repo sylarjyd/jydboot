@@ -1,0 +1,10 @@
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `is_deleted`)
+VALUES ('1681625924113563655', 1123598815738675201, 'portaluser', '应用管理', 'menu', '/jydboot/portaluser', NULL, 1, 1, 0, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `is_deleted`)
+VALUES ('1681625924113563656', '1681625924113563655', 'portaluser_add', '新增', 'add', '/jydboot/portaluser/add', 'plus', 1, 2, 1, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `is_deleted`)
+VALUES ('1681625924113563657', '1681625924113563655', 'portaluser_edit', '修改', 'edit', '/jydboot/portaluser/edit', 'form', 2, 2, 2, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `is_deleted`)
+VALUES ('1681625924113563658', '1681625924113563655', 'portaluser_delete', '删除', 'delete', '/api/jydboot/portaluser/remove', 'delete', 3, 2, 3, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `is_deleted`)
+VALUES ('1681625924113563659', '1681625924113563655', 'portaluser_view', '查看', 'view', '/jydboot/portaluser/view', 'file-text', 4, 2, 2, 1, NULL, 0);
