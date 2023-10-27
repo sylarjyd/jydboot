@@ -1,4 +1,4 @@
-package com.jyd.controller;
+package com.jyd.controller.web;
 
 import com.jyd.config.mybatis.Condition;
 import com.jyd.config.mybatis.Query;

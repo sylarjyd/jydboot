@@ -10,15 +10,3 @@ spring:
     password: 'Whdsj@Wcyj109'
     database: 10
     ssl: false
-xxl:
-  job:
-    accessToken: ''
-    admin:
-      addresses: http://172.16.10.249:9998/xxl-job-admin
-    executor:
-      address: ''
-      appname: 'jydboot'
-      ip: ''
-      logpath: /data/applogs/xxl-job/dsj-business/jobhandler
-      logretentiondays: 30
-      port: 19383

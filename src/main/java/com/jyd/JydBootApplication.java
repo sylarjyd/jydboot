@@ -6,9 +6,10 @@ import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
 import org.springframework.context.annotation.ComponentScan;
 
-@SpringBootApplication
+@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class})
 @MapperScan("com.jyd.mapper")
 @ComponentScan(basePackages = {"com.jyd.**"})
 public class JydBootApplication {
