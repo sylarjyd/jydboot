@@ -61,6 +61,11 @@
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
             <version>1.2.4</version>
         </dependency>
@@ -97,6 +102,11 @@
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>3.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+            <version>3.5.2</version>
         </dependency>
         <dependency>
             <groupId>com.baomidou</groupId>
@@ -181,6 +191,7 @@
                 <includes>
                     <include>**/*.properties</include>
                     <include>**/*.xml</include>
+                    <include>**/*.yml</include>
                 </includes>
                 <filtering>false</filtering>
             </resource>
@@ -189,6 +200,7 @@
                 <includes>
                     <include>**/*.properties</include>
                     <include>**/*.xml</include>
+                    <include>**/*.yml</include>
                 </includes>
                 <filtering>false</filtering>
             </resource>

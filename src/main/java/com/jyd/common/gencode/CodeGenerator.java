@@ -36,7 +36,25 @@ public class CodeGenerator {
 	/**
 	 * 需要生成的表名(两者只能取其一)
 	 */
-	public static String[] INCLUDE_TABLES = {"t_portal_user"};
+	public static String[] INCLUDE_TABLES = {
+			"t_audit_log",
+			"t_dict",
+			"t_district",
+			"t_file",
+			"t_message_log",
+			"t_social_account",
+			"t_sys_dept",
+			"t_sys_log",
+			"t_sys_menu",
+			"t_sys_notice",
+			"t_sys_post",
+			"t_sys_role",
+			"t_sys_role_menu",
+			"t_sys_user",
+			"t_sys_user_role",
+			"t_user"
+
+	};
 	/**
 	 * 需要排除的表名(两者只能取其一)
 	 */
