@@ -52,7 +52,7 @@ spring:
 
 mybatis-plus:
   mapperPackage: com.jyd.mapper
-  mapperLocations: com.jyd.mapper/xml/*Mapper.xml
+  mapperLocations: com.jyd.mapper.xml/*Mapper.xml
   typeAliasesPackage: com.jyd.entity
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

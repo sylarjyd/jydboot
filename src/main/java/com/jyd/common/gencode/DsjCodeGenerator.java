@@ -176,7 +176,7 @@ public class DsjCodeGenerator {
 		pc.setController("controller");
 		pc.setEntity("entity");
 		pc.setMapper("mapper");
-		pc.setXml("mapper.xml");
+		pc.setXml("mapper");
 		mpg.setPackageInfo(pc);
 		mpg.setCfg(getInjectionConfig());
 		mpg.execute();

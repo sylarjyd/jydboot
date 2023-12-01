@@ -22,8 +22,7 @@ public class MyXssFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        log.info("正在执行过滤操作");
-
+        //log.info("正在执行过滤操作");
         filterChain.doFilter(new XssHttpServletRequestWrapper((HttpServletRequest)servletRequest), servletResponse);
     }
 
