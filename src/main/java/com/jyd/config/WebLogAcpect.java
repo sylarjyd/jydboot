@@ -19,7 +19,7 @@ import java.util.Arrays;
 @Slf4j
 public class WebLogAcpect {
 
-    @Pointcut("execution(* com.jyd.*.controller..*.*(..))")
+    @Pointcut("execution(* com.jyd.controller..*.*(..))")
     public void webLog(){}
 
     @Before("webLog()")
