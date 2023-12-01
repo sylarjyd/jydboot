@@ -1,0 +1,10 @@
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482159094489094', 1123598815738675201, 'sysrolemenu', '应用管理', 'menu', '/jydboot/sysrolemenu', NULL, 1, 1, 0, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482159094489095', '1730482159094489094', 'sysrolemenu_add', '新增', 'add', '/jydboot/sysrolemenu/add', 'plus', 1, 2, 1, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482159094489096', '1730482159094489094', 'sysrolemenu_edit', '修改', 'edit', '/jydboot/sysrolemenu/edit', 'form', 2, 2, 2, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482159094489097', '1730482159094489094', 'sysrolemenu_delete', '删除', 'delete', '/api/jydboot/sysrolemenu/remove', 'delete', 3, 2, 3, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482159094489098', '1730482159094489094', 'sysrolemenu_view', '查看', 'view', '/jydboot/sysrolemenu/view', 'file-text', 4, 2, 2, 1, NULL, 0);

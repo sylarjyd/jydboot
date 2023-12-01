@@ -1,0 +1,10 @@
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482157186080775', 1123598815738675201, 'dict', '应用管理', 'menu', '/jydboot/dict', NULL, 1, 1, 0, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482157186080776', '1730482157186080775', 'dict_add', '新增', 'add', '/jydboot/dict/add', 'plus', 1, 2, 1, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482157186080777', '1730482157186080775', 'dict_edit', '修改', 'edit', '/jydboot/dict/edit', 'form', 2, 2, 2, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482157186080778', '1730482157186080775', 'dict_delete', '删除', 'delete', '/api/jydboot/dict/remove', 'delete', 3, 2, 3, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482157186080779', '1730482157186080775', 'dict_view', '查看', 'view', '/jydboot/dict/view', 'file-text', 4, 2, 2, 1, NULL, 0);

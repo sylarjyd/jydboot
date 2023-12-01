@@ -1,0 +1,10 @@
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158566006791', 1123598815738675201, 'sysmenu', '应用管理', 'menu', '/jydboot/sysmenu', NULL, 1, 1, 0, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158566006792', '1730482158566006791', 'sysmenu_add', '新增', 'add', '/jydboot/sysmenu/add', 'plus', 1, 2, 1, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158566006793', '1730482158566006791', 'sysmenu_edit', '修改', 'edit', '/jydboot/sysmenu/edit', 'form', 2, 2, 2, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158566006794', '1730482158566006791', 'sysmenu_delete', '删除', 'delete', '/api/jydboot/sysmenu/remove', 'delete', 3, 2, 3, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158566006795', '1730482158566006791', 'sysmenu_view', '查看', 'view', '/jydboot/sysmenu/view', 'file-text', 4, 2, 2, 1, NULL, 0);

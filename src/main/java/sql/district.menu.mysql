@@ -1,0 +1,10 @@
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482157710368774', 1123598815738675201, 'district', '应用管理', 'menu', '/jydboot/district', NULL, 1, 1, 0, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482157710368775', '1730482157710368774', 'district_add', '新增', 'add', '/jydboot/district/add', 'plus', 1, 2, 1, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482157710368776', '1730482157710368774', 'district_edit', '修改', 'edit', '/jydboot/district/edit', 'form', 2, 2, 2, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482157710368777', '1730482157710368774', 'district_delete', '删除', 'delete', '/api/jydboot/district/remove', 'delete', 3, 2, 3, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482157710368778', '1730482157710368774', 'district_view', '查看', 'view', '/jydboot/district/view', 'file-text', 4, 2, 2, 1, NULL, 0);

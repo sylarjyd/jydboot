@@ -27,7 +27,7 @@ import $!{superControllerClassPackage};
 #end
 #if(!$!{superEntityClass})
 #end
-
+import java.util.List;
 /**
  * $!{table.comment} 控制器
  *

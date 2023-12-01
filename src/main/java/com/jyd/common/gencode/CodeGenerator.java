@@ -24,7 +24,7 @@ public class CodeGenerator {
 	/**
 	 * 前端代码生成所属系统
 	 */
-	public static String SYSTEM_NAME = "jyd";
+	public static String SYSTEM_NAME = "sword";
 	/**
 	 * 前端代码生成地址
 	 */
@@ -37,7 +37,7 @@ public class CodeGenerator {
 	 * 需要生成的表名(两者只能取其一)
 	 */
 	public static String[] INCLUDE_TABLES = {
-			"t_audit_log",
+			//"t_audit_log",
 			"t_dict",
 			"t_district",
 			"t_file",
@@ -96,8 +96,8 @@ public class CodeGenerator {
 		generator.setUsername(USER_NAME);
 		generator.setPassword(PASS_WORD);
 		generator.setCodeName(CODE_NAME);
-		//generator.setServiceName(SERVICE_NAME);
-		//generator.setSystemName(SYSTEM_NAME);
+		generator.setServiceName(SERVICE_NAME);
+		generator.setSystemName(SYSTEM_NAME);
 		generator.setPackageName(PACKAGE_NAME);
 		generator.setPackageWebDir(PACKAGE_WEB_DIR);
 		generator.setTablePrefix(TABLE_PREFIX);

@@ -1,0 +1,10 @@
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158238851079', 1123598815738675201, 'socialaccount', '应用管理', 'menu', '/jydboot/socialaccount', NULL, 1, 1, 0, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158238851080', '1730482158238851079', 'socialaccount_add', '新增', 'add', '/jydboot/socialaccount/add', 'plus', 1, 2, 1, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158238851081', '1730482158238851079', 'socialaccount_edit', '修改', 'edit', '/jydboot/socialaccount/edit', 'form', 2, 2, 2, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158238851082', '1730482158238851079', 'socialaccount_delete', '删除', 'delete', '/api/jydboot/socialaccount/remove', 'delete', 3, 2, 3, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158238851083', '1730482158238851079', 'socialaccount_view', '查看', 'view', '/jydboot/socialaccount/view', 'file-text', 4, 2, 2, 1, NULL, 0);

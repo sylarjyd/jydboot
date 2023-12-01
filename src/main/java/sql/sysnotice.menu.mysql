@@ -1,0 +1,10 @@
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158696030215', 1123598815738675201, 'sysnotice', '应用管理', 'menu', '/jydboot/sysnotice', NULL, 1, 1, 0, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158696030216', '1730482158696030215', 'sysnotice_add', '新增', 'add', '/jydboot/sysnotice/add', 'plus', 1, 2, 1, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158696030217', '1730482158696030215', 'sysnotice_edit', '修改', 'edit', '/jydboot/sysnotice/edit', 'form', 2, 2, 2, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158696030218', '1730482158696030215', 'sysnotice_delete', '删除', 'delete', '/api/jydboot/sysnotice/remove', 'delete', 3, 2, 3, 1, NULL, 0);
+INSERT INTO `dsj_menu`(`id`, `parent_id`, `code`, `name`, `alias`, `path`, `source`, `sort`, `category`, `action`, `is_open`, `remark`, `deleted`)
+VALUES ('1730482158696030219', '1730482158696030215', 'sysnotice_view', '查看', 'view', '/jydboot/sysnotice/view', 'file-text', 4, 2, 2, 1, NULL, 0);

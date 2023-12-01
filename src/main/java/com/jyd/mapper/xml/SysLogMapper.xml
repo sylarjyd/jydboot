@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jyd.mapper.SysLogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="sysLogResultMap" type="com.jyd.entity.SysLog">
+        <id column="id" property="id"/>
+        <result column="server_ip" property="serverIp"/>
+        <result column="remote_ip" property="remoteIp"/>
+        <result column="service_name" property="serviceName"/>
+        <result column="opt_module" property="optModule"/>
+        <result column="opt_type" property="optType"/>
+        <result column="type" property="type"/>
+        <result column="method" property="method"/>
+        <result column="request_uri" property="requestUri"/>
+        <result column="response" property="response"/>
+        <result column="method_name" property="methodName"/>
+        <result column="method_class" property="methodClass"/>
+        <result column="params" property="params"/>
+        <result column="status" property="status"/>
+        <result column="create_user" property="createUser"/>
+        <result column="create_time" property="createTime"/>
+    </resultMap>
+
+
+    <sql id="Base_Column_List">
+        
+        server_ip, remote_ip, service_name, opt_module, opt_type, type, method, request_uri, response, method_name, method_class, params, status, create_user, create_time
+    </sql>
+
+    <select id="selectSysLogPage" resultMap="sysLogResultMap">
+        select * from t_sys_log where deleted = 0
+    </select>
+
+</mapper>

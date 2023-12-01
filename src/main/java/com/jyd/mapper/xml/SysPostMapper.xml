@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jyd.mapper.SysPostMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="sysPostResultMap" type="com.jyd.entity.SysPost">
+        <id column="id" property="id"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="create_user" property="createUser"/>
+        <result column="update_user" property="updateUser"/>
+        <result column="status" property="status"/>
+        <result column="deleted" property="deleted"/>
+        <result column="post_code" property="postCode"/>
+        <result column="post_name" property="postName"/>
+        <result column="mark" property="mark"/>
+        <result column="dept_id" property="deptId"/>
+    </resultMap>
+
+
+    <sql id="Base_Column_List">
+        
+        create_time, update_time, create_user, update_user, status, deleted, post_code, post_name, mark, dept_id
+    </sql>
+
+    <select id="selectSysPostPage" resultMap="sysPostResultMap">
+        select * from t_sys_post where deleted = 0
+    </select>
+
+</mapper>

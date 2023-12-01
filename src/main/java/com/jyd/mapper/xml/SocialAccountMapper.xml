@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jyd.mapper.SocialAccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="socialAccountResultMap" type="com.jyd.entity.SocialAccount">
+        <id column="id" property="id"/>
+        <result column="user_id" property="userId"/>
+        <result column="user_type" property="userType"/>
+        <result column="social_code" property="socialCode"/>
+        <result column="social_account" property="socialAccount"/>
+    </resultMap>
+
+
+    <sql id="Base_Column_List">
+        
+        user_id, user_type, social_code, social_account
+    </sql>
+
+    <select id="selectSocialAccountPage" resultMap="socialAccountResultMap">
+        select * from t_social_account where deleted = 0
+    </select>
+
+</mapper>
