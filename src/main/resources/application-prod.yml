@@ -15,6 +15,12 @@ spring:
     password: 'Whdsj@Wcyj109'
     database: 10
     ssl: false
+  rabbitmq:
+    host: 172.16.10.249
+    port: 5672
+    username: root
+    password: Wcyj@mq0214
+    virtual-host: /jydboot
 xxl:
   job:
     accessToken: 'bc6fea25a4534119aeba45af7d7b68d9'
