@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.github.xiaoymin.knife4j.annotations.ApiOperationSupport;
 import com.jyd.config.mybatis.Condition;
 import com.jyd.config.mybatis.Query;
-import com.jyd.entity.File;
+import com.jyd.entity.OssFile;
 import com.jyd.service.IFileService;
 import com.jyd.vo.FileVO;
 import com.jyd.vo.R;
@@ -37,8 +37,8 @@ public class FileController {
 	@GetMapping("/detail")
 	@ApiOperationSupport(order = 1)
 	@ApiOperation(value = "详情", notes = "传入file")
-	public R<File> detail(File file) {
-		File detail = fileService.getOne(Condition.getQueryWrapper(file));
+	public R<OssFile> detail(OssFile file) {
+		OssFile detail = fileService.getOne(Condition.getQueryWrapper(file));
 		return R.data(detail);
 	}
 
@@ -48,8 +48,8 @@ public class FileController {
 	@GetMapping("/list")
 	@ApiOperationSupport(order = 2)
 	@ApiOperation(value = "分页", notes = "传入file")
-	public R<IPage<File>> list(File file, Query query) {
-		IPage<File> pages = fileService.page(Condition.getPage(query), Condition.getQueryWrapper(file));
+	public R<IPage<OssFile>> list(OssFile file, Query query) {
+		IPage<OssFile> pages = fileService.page(Condition.getPage(query), Condition.getQueryWrapper(file));
 		return R.data(pages);
 	}
 
@@ -70,7 +70,7 @@ public class FileController {
 	@PostMapping("/save")
 	@ApiOperationSupport(order = 4)
 	@ApiOperation(value = "新增", notes = "传入file")
-	public R save(@Valid @RequestBody File file) {
+	public R save(@Valid @RequestBody OssFile file) {
 		return R.status(fileService.save(file));
 	}
 
@@ -80,7 +80,7 @@ public class FileController {
 	@PostMapping("/update")
 	@ApiOperationSupport(order = 5)
 	@ApiOperation(value = "修改", notes = "传入file")
-	public R update(@Valid @RequestBody File file) {
+	public R update(@Valid @RequestBody OssFile file) {
 		return R.status(fileService.updateById(file));
 	}
 
@@ -90,7 +90,7 @@ public class FileController {
 	@PostMapping("/submit")
 	@ApiOperationSupport(order = 6)
 	@ApiOperation(value = "新增或修改", notes = "传入file")
-	public R submit(@Valid @RequestBody File file) {
+	public R submit(@Valid @RequestBody OssFile file) {
 		return R.status(fileService.saveOrUpdate(file));
 	}
 

@@ -3,7 +3,7 @@
 <mapper namespace="com.jyd.mapper.FileMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="fileResultMap" type="com.jyd.entity.File">
+    <resultMap id="fileResultMap" type="com.jyd.entity.OssFile">
         <id column="id" property="id"/>
         <result column="file_name" property="fileName"/>
         <result column="original_name" property="originalName"/>
@@ -16,12 +16,15 @@
         <result column="update_time" property="updateTime"/>
         <result column="status" property="status"/>
         <result column="deleted" property="deleted"/>
+        <result column="domain" property="domain"/>
+        <result column="bucket" property="bucket"/>
+        <result column="url" property="url"/>
     </resultMap>
 
 
     <sql id="Base_Column_List">
-        
-        file_name, original_name, file_type, file_size, auth, create_user, create_time, update_user, update_time, status, deleted
+
+        file_name, original_name, file_type, file_size, auth, create_user, create_time, update_user, update_time, status, deleted, domain, bucket,url
     </sql>
 
     <select id="selectFilePage" resultMap="fileResultMap">

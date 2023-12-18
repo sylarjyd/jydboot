@@ -1,23 +1,23 @@
 package com.jyd.entity;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import java.util.Date;
-import java.io.Serializable;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+import java.io.Serializable;
+import java.time.LocalDateTime;
 
 /**
  * 文件存储实体类
  *
- * @author 
+ * @author
  * @since 2023-12-01
  */
 @Data
 @TableName("t_file")
 @ApiModel(value = "File对象", description = "文件存储")
-public class File implements Serializable {
+public class OssFile implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -60,7 +60,7 @@ public class File implements Serializable {
 	* 创建时间
 	*/
 		@ApiModelProperty(value = "创建时间")
-		private Date createTime;
+		private LocalDateTime createTime;
 	/**
 	* 修改人
 	*/
@@ -70,7 +70,7 @@ public class File implements Serializable {
 	* 修改时间
 	*/
 		@ApiModelProperty(value = "修改时间")
-		private Date updateTime;
+		private LocalDateTime updateTime;
 	/**
 	* 状态
 	*/
@@ -82,5 +82,21 @@ public class File implements Serializable {
 		@ApiModelProperty(value = "是否已删除")
 		private Integer deleted;
 
+	/**
+	 * 域名
+	 */
+	@ApiModelProperty(value = "域名")
+	private String domain;
 
+	/**
+	 * 桶
+	 */
+	@ApiModelProperty(value = "桶")
+	private String bucket;
+
+	/**
+	 * 访问URL
+	 */
+	@ApiModelProperty(value = "访问URL")
+	private String url;
 }

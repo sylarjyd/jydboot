@@ -1,17 +1,17 @@
 package com.jyd.service;
 
-import com.jyd.entity.File;
-import com.jyd.vo.FileVO;
-import com.baomidou.mybatisplus.extension.service.IService;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.jyd.entity.OssFile;
+import com.jyd.vo.FileVO;
 
 /**
  * 文件存储 服务类
  *
- * @author 
+ * @author
  * @since 2023-12-01
  */
-public interface IFileService extends IService<File> {
+public interface IFileService extends IService<OssFile> {
 
 	/**
 	 * 自定义分页
