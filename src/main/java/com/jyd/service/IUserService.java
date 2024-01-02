@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 /**
  * 门户用户 服务类
  *
- * @author 
+ * @author
  * @since 2023-12-01
  */
 public interface IUserService extends IService<User> {
@@ -22,4 +22,11 @@ public interface IUserService extends IService<User> {
 	 */
 	IPage<UserVO> selectUserPage(IPage<UserVO> page, UserVO user);
 
+	Boolean register(User user);
+
+	User login(User user);
+
+	Boolean reset(User user);
+
+	void getRolesByUserId(String id);
 }

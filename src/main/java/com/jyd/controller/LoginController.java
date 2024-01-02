@@ -35,17 +35,27 @@ public class LoginController {
 	@ApiOperationSupport(order = 1)
 	@ApiOperation(value = "新增", notes = "传入User")
 	public R register(@Valid @RequestBody User user) {
-		return R.status(userService.save(user));
+		return R.status(userService.register(user));
 	}
 
 	/**
 	 * 登录
 	 */
 	@PostMapping("/login")
-	@ApiOperationSupport(order = 1)
+	@ApiOperationSupport(order = 2)
 	@ApiOperation(value = "登录", notes = "传入User")
 	public R login(@Valid @RequestBody User user) {
-		return R.status(userService.save(user));
+		return R.data(userService.login(user));
+	}
+
+	/**
+	 * 重置密码
+	 */
+	@PostMapping("/reset")
+	@ApiOperationSupport(order = 3)
+	@ApiOperation(value = "重置密码", notes = "传入User")
+	public R reset(@Valid @RequestBody User user) {
+		return R.data(userService.reset(user));
 	}
 
 }

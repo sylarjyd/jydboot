@@ -42,3 +42,10 @@ minio:
 
 knife4j:
   production: true
+
+login:
+  secret: jydplisofe0956
+  expire: 7200
+  skipurl:
+    - /portal/register
+    - /portal/login

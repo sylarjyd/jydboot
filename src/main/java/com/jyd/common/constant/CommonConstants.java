@@ -58,4 +58,11 @@ public class CommonConstants {
 
     public static final String STRING_NIGHT = "9";
 
+    public static final String AUTHORIZATION = "Authorization";
+
+    public static final String USER_ID = "userId";
+
+    public static final String AUTHOR = "jyd";
+
+    public static final String LOGIN_USER_PREFIX = "login:user:";
 }
