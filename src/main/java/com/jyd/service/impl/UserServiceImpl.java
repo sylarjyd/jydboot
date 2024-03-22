@@ -37,4 +37,9 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
 	public Boolean reset(User user) {
 		return null;
 	}
+
+	@Override
+	public void getRolesByUserId(String id) {
+
+	}
 }

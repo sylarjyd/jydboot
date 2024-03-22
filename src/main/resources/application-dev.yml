@@ -5,15 +5,15 @@ spring:
       strict: false
       datasource:
         master:
-          url: jdbc:mysql://172.16.10.243:3306/jydboot?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&autoReconnect=true&rewriteBatchedStatements=true&allowMultiQueries=true
+          url: jdbc:mysql://localhost:3306/jydboot?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&autoReconnect=true&rewriteBatchedStatements=true&allowMultiQueries=true
           username: root
-          password: Whdsj@!db109
+          password: Dsj*123456
           driver-class-name: com.mysql.cj.jdbc.Driver
   redis:
     host: 172.16.10.243
     port: 6379
     password: 'Whdsj@Wcyj109'
-    database: 10
+    database: 13
     ssl: false
   rabbitmq:
     host: 172.16.10.249
