@@ -65,4 +65,6 @@ public class CommonConstants {
     public static final String AUTHOR = "jyd";
 
     public static final String LOGIN_USER_PREFIX = "login:user:";
+
+    public static final String ROOT_NODE_ID = "0";
 }
